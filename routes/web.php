@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('login', function () {
-    return redirect(config('keycloak.login'));
+    // do nothing
+    // we could redirect here if we would have a frontend
 })->name('login');
 
 Route::get('/', function () {
