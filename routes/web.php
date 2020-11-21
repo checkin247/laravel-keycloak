@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('login', function () {
+    return redirect(config('keycloak.login'));
+})->name('login');
+
 Route::get('/', function () {
     return view('welcome');
 });
